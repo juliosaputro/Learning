@@ -98,24 +98,6 @@ const HomeScreen = ({ navigation }) => {
           style={{ height: 50, width: 50, borderRadius: 25 }}
         />
       </View>
-      {/* <View
-        style={{
-          marginTop: 40,
-          flexDirection: "row",
-          paddingHorizontal: 20,
-        }}
-      >
-        <View style={styles.inputContainer}>
-          <Icon name="search" size={28} />
-          <TextInput
-            style={{ flex: 1, fontSize: 18 }}
-            placeholder="Search for materi"
-          />
-        </View>
-        <View style={styles.sortBtn}>
-          <Icon name="tune" size={28} color={COLORS.white} />
-        </View>
-      </View> */}
       <View>
         <ListCategories />
       </View>

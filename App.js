@@ -13,7 +13,7 @@ import DetailScreen from "./src/views/screens/DetailScreen";
 import QuizScreen from "./src/views/screens/QuizScreen";
 import KomDasarScreen from "./src/views/screens/KomDasarScreen";
 import KomIntiScreen from "./src/views/screens/KomIntiScreen";
-
+import MenuScreen from './src/views/screens/MenuScreen'
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -23,7 +23,9 @@ export default function App() {
       <StatusBar backgroundColor={COLORS.white} barStyle="dark-style" />
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="BoardScreen" component={OnBoardScreen}  />
-        <Stack.Screen name="Home" component={BottomNavigator} />
+        <Stack.Screen name="Menu" component={MenuScreen}  />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="QuizScreen" component={QuizScreen}/>
         <Stack.Screen name="DetailScreen" component={DetailScreen}/>
         <Stack.Screen name="KomIntiScreen" component={KomIntiScreen} options={{headerShown: true,title:'Kompetensi Inti'}}/>
         <Stack.Screen name="KomDasarScreen" component={KomDasarScreen} options={{headerShown: true, title:'Kompetensi Dasar'}}/>
@@ -40,4 +42,3 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
