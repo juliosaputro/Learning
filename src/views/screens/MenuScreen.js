@@ -1,19 +1,19 @@
-import React from 'react'
-import {StyleSheet, Text, View, Dimensions,Image} from 'react-native'
-import {SafeAreaView} from 'react-native-safe-area-context'
+import React from "react";
+import { StyleSheet, Text, View, Dimensions, Image } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import {
-  ScrollView, 
+  ScrollView,
   FlatList,
   TouchableHighlight,
-} from 'react-native-gesture-handler'
-import COLORS from '../../const/colors'
-import menu from '../../const/menu'
-
+} from "react-native-gesture-handler";
+import COLORS from "../../const/colors";
+import menu from "../../const/menu";
+import MarqueeText from 'react-native-marquee';
 
 const { width } = Dimensions.get("screen");
 const cardWidth = width / 2 - 20;
 
-export default function MenuScreen({navigation}) {
+export default function MenuScreen({ navigation }) {
   const Card = ({ menu }) => {
     return (
       <TouchableHighlight
@@ -22,11 +22,28 @@ export default function MenuScreen({navigation}) {
         onPress={() => navigation.navigate(menu.page, menu)}
       >
         <View style={styles.card}>
-          <View style={{ alignItems: "center", top: 0 }}>
+          <View
+            style={{
+              alignItems: "center",
+              top: 0,
+              backgroundColor: menu.color,
+              padding: 10,
+              borderRadius: 15,
+            }}
+          >
             <Image source={menu.image} style={{ height: 120, width: 120 }} />
           </View>
           <View style={{ marginHorizontal: 20 }}>
-            <Text style={{ fontSize: 14, color: COLORS.grey, marginTop: 2 }}>
+            <Text
+              style={{
+                fontSize: 16,
+                fontWeight: "bold",
+                textTransform: "uppercase",
+                color: COLORS.dark,
+                marginTop: 2,
+                textAlign: "center",
+              }}
+            >
               {menu.judul}
             </Text>
           </View>
@@ -35,44 +52,59 @@ export default function MenuScreen({navigation}) {
     );
   };
   return (
-         <SafeAreaView style={{ flex: 1 }}>
-         <View style={{ 
-        height:367,
-        flex:1,
-        color:COLORS.dark,
-        justifyContent:'center',
-          alignItems: 'center',
-          backgroundColor: COLORS.secondary,
-         }}>
-         <Text style={{ 
-           textTransform:'uppercase',
-           fontSize:24,
-           fontWeight:'bold'
-          }}>
-          Menu Home
-          </Text>
-         </View>
-         <FlatList 
-         showsVerticalScrollIndicator={false}
-         numColumns={2}
-         data={menu}
-         renderItem={({item})=> <Card menu={item}/>}
-         />
-         </SafeAreaView>
-  )
+    <SafeAreaView style={{ flex: 1 }}>
+      <View
+        style={{
+          height: 367,
+          padding:10,
+          flexDirection:'row',
+          flex: 1,
+          color: COLORS.dark,
+          justifyContent: "center",
+          alignItems: "center",
+          display:'flex',
+        }}
+      >
+       <Image
+          source={require("../../assets/smk.png")}
+          style={{ height: 50, width: 50, borderRadius: 25 }}
+        />
+        <MarqueeText
+          style={{
+            width:'90%',
+            padding:10,
+            textTransform: "uppercase",
+            fontSize: 24,
+            fontWeight: "bold",
+          }}
+          speed={0.2}
+              marqueeOnStart={true}
+              loop={true}
+              delay={1000}
+        >
+        Selamat Datang di SMK n 1 pleret 
+        </MarqueeText>
+      </View>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        numColumns={2}
+        data={menu}
+        renderItem={({ item }) => (
+          <Card menu={item} />
+        )}
+      />
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
   card: {
-    justifyContent: 'center',
-    alignItems:'center',
+    justifyContent: "center",
+    alignItems: "center",
     height: 180,
     width: cardWidth,
     marginHorizontal: 10,
-    marginBottom: 20,
     marginTop: 10,
     borderRadius: 15,
-    // elevation: 13,
-    backgroundColor: COLORS.white,
-  }
-})
+  },
+});

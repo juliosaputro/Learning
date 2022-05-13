@@ -14,6 +14,7 @@ import QuizScreen from "./src/views/screens/QuizScreen";
 import KomDasarScreen from "./src/views/screens/KomDasarScreen";
 import KomIntiScreen from "./src/views/screens/KomIntiScreen";
 import MenuScreen from './src/views/screens/MenuScreen'
+import InfoScreen from "./src/views/screens/InfoScreen";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -27,6 +28,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="QuizScreen" component={QuizScreen}/>
         <Stack.Screen name="DetailScreen" component={DetailScreen}/>
+        <Stack.Screen name="InfoScreen" component={InfoScreen}/>
         <Stack.Screen name="KomIntiScreen" component={KomIntiScreen} options={{headerShown: true,title:'Kompetensi Inti'}}/>
         <Stack.Screen name="KomDasarScreen" component={KomDasarScreen} options={{headerShown: true, title:'Kompetensi Dasar'}}/>
       </Stack.Navigator>
