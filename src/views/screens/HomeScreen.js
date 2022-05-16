@@ -70,13 +70,13 @@ const HomeScreen = ({ navigation }) => {
       >
         <View style={styles.card}>
           <View style={{ alignItems: "center", top: 0 }}>
-            <Image source={materi.image} style={{ height: 120, width: 120 }} />
-          </View>
-          <View style={{ marginHorizontal: 20 }}>
-            <Text style={{ fontSize: 18, fontWeight: "bold" }}>
+            <Text style={{ fontSize: 18, fontWeight: "bold", textTransform:'uppercase' }}>
               {materi.bab}
             </Text>
-            <Text style={{ fontSize: 14, color: COLORS.grey, marginTop: 2 }}>
+            <Image source={materi.image} style={{ height: 120, width: 120 }} />
+          </View>
+          <View style={{ marginHorizontal: 20, alignItems:'center', }}>
+            <Text style={{ fontSize: 14, color: COLORS.grey, marginTop: 2, fontWeight:'bold',textAlign:'center' }}>
               {materi.judul}
             </Text>
           </View>
@@ -98,9 +98,9 @@ const HomeScreen = ({ navigation }) => {
           style={{ height: 50, width: 50, borderRadius: 25 }}
         />
       </View>
-      <View>
+      {/* <View>
         <ListCategories />
-      </View>
+      </View> */}
       <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}
@@ -161,7 +161,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   card: {
-    height: 180,
+    height: 240,
+    paddingTop:10,
     width: cardWidth,
     marginHorizontal: 10,
     marginBottom: 20,

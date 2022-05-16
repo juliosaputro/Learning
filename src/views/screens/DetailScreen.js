@@ -12,7 +12,7 @@ const DetailScreen = ({ navigation, route }) => {
         <Icon name="arrow-back-ios" size={28} onPress={navigation.goBack} />
         <Text style={{ fontSize: 20, fontWeight: "bold" }}>{item.bab}</Text>
       </View>
-      <ScrollView showsHorizontalScrollIndicator={false}>
+      <ScrollView  showsHorizontalScrollIndicator={false}>
         <View
           style={{
             justifyContent: "center",
@@ -37,8 +37,28 @@ const DetailScreen = ({ navigation, route }) => {
             </Text>
           </View>
           <Text style={styles.detailsText}>
-            {item.des}
+            {item.des1}
+            {item.des2}
           </Text>
+          <Image
+            source={item.tabel}
+            style={{ resizeMode: "contain", width: "100%" }}
+          />
+          <Text style={styles.detailsText}>
+            {item.des3}
+          </Text>
+          <Image
+            source={item.tabel1}
+            style={{ resizeMode: "contain", width: "100%" }}
+          />
+          <Text style={styles.detailsText}>
+            {item.des4}
+            {item.des5}
+          </Text>
+          <Image
+            source={item.tabel2}
+            style={{ resizeMode: "contain", width: "100%" }}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -58,6 +78,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 40,
     paddingBottom: 60,
+    marginBottom:50,
     backgroundColor: COLORS.primary,
     borderTopRightRadius: 40,
     borderTopLeftRadius: 40,
@@ -71,6 +92,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
   },
   detailsText: {
+    textAlign: "justify",
     marginTop: 10,
     lineHeight: 22,
     fontSize: 16,
