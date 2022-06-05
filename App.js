@@ -13,8 +13,13 @@ import DetailScreen from "./src/views/screens/DetailScreen";
 import QuizScreen from "./src/views/screens/QuizScreen";
 import KomDasarScreen from "./src/views/screens/KomDasarScreen";
 import KomIntiScreen from "./src/views/screens/KomIntiScreen";
-import MenuScreen from './src/views/screens/MenuScreen'
+import MenuScreen from './src/views/screens/MenuScreen';
+import BabScreen from "./src/views/screens/BabScreen";
 import InfoScreen from "./src/views/screens/InfoScreen";
+import BabDuaScreen from "./src/views/screens/BabDuaScreen";
+import BabTigaScreen from "./src/views/screens/BabTigaScreen";
+import BabEmpatScreen from "./src/views/screens/BabEmpatScreen ";
+import BabLimaScreen from "./src/views/screens/BabLimaScreen";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -26,8 +31,13 @@ export default function App() {
         <Stack.Screen name="BoardScreen" component={OnBoardScreen}  />
         <Stack.Screen name="Menu" component={MenuScreen}  />
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="BabDuaScreen" component={BabDuaScreen} />
+        <Stack.Screen name="BabTigaScreen" component={BabTigaScreen} />
+        <Stack.Screen name="BabEmpatScreen" component={BabEmpatScreen} />
+        <Stack.Screen name="BabLimaScreen" component={BabLimaScreen} />
         <Stack.Screen name="QuizScreen" component={QuizScreen}/>
         <Stack.Screen name="DetailScreen" component={DetailScreen}/>
+        <Stack.Screen name="BabScreen" component={BabScreen}/>
         <Stack.Screen name="InfoScreen" component={InfoScreen}/>
         <Stack.Screen name="KomIntiScreen" component={KomIntiScreen} options={{headerShown: true,title:'Kompetensi Inti'}}/>
         <Stack.Screen name="KomDasarScreen" component={KomDasarScreen} options={{headerShown: true, title:'Kompetensi Dasar'}}/>

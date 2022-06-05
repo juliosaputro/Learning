@@ -1,4 +1,4 @@
-export default quiz = [
+const quiz = [
        {
               question: "Komputer merupakan mesin berbasis listrik yang terdiri dari beberapa elemen. Elemen – elemen yang terkait untuk menjalankan suatu aktivitas dengan menggunakan komputer merupakan defenisi dari...",
               options: ["Sistem", "Komputer", "Sistem computer", "Komputer sistem","Sistema"],
@@ -75,3 +75,5 @@ export default quiz = [
               correct_option: "Xor"
        },
 ]
+
+export default quiz;

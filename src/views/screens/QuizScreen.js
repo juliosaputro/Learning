@@ -114,21 +114,16 @@ const QuizScreen = ({ navigation }) => {
         {allQuestions[currentQuestionIndex]?.options.map((option) => (
           <TouchableOpacity
             onPress={() => validateAnswer(option)}
-            disabled={isOptionsDisabled}
             key={option}
             style={{
               borderWidth: 3,
               borderColor:
-                option == correctOption
-                  ? COLORS.success
-                  : option == currentOptionSelected
-                  ? COLORS.error
-                  : COLORS.secondary + "40",
+                option == currentOptionSelected
+                  ? COLORS.secondary 
+                  : COLORS.secondary,
               backgroundColor:
-                option == correctOption
+                option == currentOptionSelected
                   ? COLORS.success + "20"
-                  : option == currentOptionSelected
-                  ? COLORS.error + "20"
                   : COLORS.secondary + "20",
               height: 60,
               borderRadius: 20,
@@ -140,45 +135,6 @@ const QuizScreen = ({ navigation }) => {
             }}
           >
             <Text style={{ fontSize: 20, color: COLORS.dark }}>{option}</Text>
-            {option == correctOption ? (
-              <View
-                style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 30 / 2,
-                  backgroundColor: COLORS.success,
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <MaterialCommunityIcons
-                  name="check"
-                  style={{
-                    color: COLORS.white,
-                    fontSize: 20,
-                  }}
-                />
-              </View>
-            ) : option == currentOptionSelected ? (
-              <View
-                style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 30 / 2,
-                  backgroundColor: COLORS.error,
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <MaterialCommunityIcons
-                  name="close"
-                  style={{
-                    color: COLORS.white,
-                    fontSize: 20,
-                  }}
-                />
-              </View>
-            ) : null}
           </TouchableOpacity>
         ))}
       </View>
@@ -338,7 +294,7 @@ const QuizScreen = ({ navigation }) => {
                   </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                  onPress={() => navigation.push("Home")}
+                  onPress={() => navigation.push("Menu")}
                   style={{
                     backgroundColor: COLORS.success,
                     padding: 20,

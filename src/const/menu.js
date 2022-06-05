@@ -17,7 +17,7 @@ const menu = [
          id: "3",
          judul: "Materi",
          image: require("../../src/assets/materi.png"),
-         page: 'Home',
+         page: 'BabScreen',
          color: '#0066cc',
        },
        {

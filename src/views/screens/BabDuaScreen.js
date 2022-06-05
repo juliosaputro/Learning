@@ -16,71 +16,33 @@ import {
 } from "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import COLORS from "../../const/colors";
-import categories from "../../const/categories";
-import materi from "../../const/materi";
+import materidua from "../../const/materidua";
 
 const { width } = Dimensions.get("screen");
 const cardWidth = width / 2 - 20;
 
-const HomeScreen = ({ navigation }) => {
-  const [selectedCategoryIndex, setSelectedCategoryIndex] = useState(0);
+const BabDuaScreen = ({ navigation }) => {
 
-  const ListCategories = () => {
-    return (
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.categoriesListContainer}
-      >
-        {categories.map((category, index) => (
-          <TouchableOpacity
-            key={index}
-            activeOpacity={0.8}
-            onPress={() => navigation.navigate(category.screen)}
-          >
-            <View
-              style={{
-                backgroundColor: COLORS.primary,
-                ...styles.categoryBtn,
-              }}
-            >
-              <Text
-                style={{
-                  fontSize: 15,
-                  fontWeight: "bold",
-                  marginLeft: 10,
-                  color: COLORS.white,
-                }}
-              >
-                {category.name}
-              </Text>
-            </View>
-          </TouchableOpacity>
-        ))}
-      </ScrollView>
-    );
-  };
-
-  const Card = ({ materi }) => {
+  const Card = ({ materidua }) => {
     return (
       <TouchableHighlight
         underlayColor={COLORS.white}
         activeOpacity={0.9}
-        onPress={() => navigation.navigate("DetailScreen", materi)}
+        onPress={() => navigation.navigate("DetailScreen", materidua)}
       >
         <View style={styles.card}>
           <View style={{ alignItems: "center", top: 0 }}>
             <Text style={{ fontSize: 18, fontWeight: "bold", textTransform:'uppercase' }}>
-              {materi.bab}
+              {materidua.bab}
             </Text>
             <View style={{ height: 60, width:60, alignItems:'center', justifyContent:'center',}}>
-            <Text style={{ fontSize: 48, fontWeight: "bold", color:COLORS.primary}}>{materi.id}</Text>
+            <Text style={{ fontSize: 48, fontWeight: "bold", color:COLORS.primary}}>{materidua.id}</Text>
             </View>
             {/* <Image source={materi.image} style={{ height: 120, width: 120 }} /> */}
           </View>
           <View style={{ height:90, marginHorizontal: 20, alignItems:'center', justifyContent:'center' }}>
             <Text style={{ fontSize: 14, color: COLORS.grey, marginTop: 2, fontWeight:'bold',textAlign:'center' }}>
-              {materi.judul}
+              {materidua.judul}
             </Text>
           </View>
         </View>
@@ -107,14 +69,14 @@ const HomeScreen = ({ navigation }) => {
       <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}
-        data={materi}
-        renderItem={({ item }) => <Card materi={item} />}
+        data={materidua}
+        renderItem={({ item }) => <Card materidua={item} />}
       />
     </SafeAreaView>
   );
 };
 
-export default HomeScreen;
+export default BabDuaScreen;
 
 const styles = StyleSheet.create({
   header: {

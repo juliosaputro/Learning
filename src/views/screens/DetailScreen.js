@@ -13,7 +13,7 @@ const DetailScreen = ({ navigation, route }) => {
         <Text style={{ fontSize: 20, fontWeight: "bold" }}>{item.bab}</Text>
       </View>
       <ScrollView  showsHorizontalScrollIndicator={false}>
-        <View
+        {/* <View
           style={{
             justifyContent: "center",
             alignItems: "center",
@@ -21,7 +21,7 @@ const DetailScreen = ({ navigation, route }) => {
           }}
         >
           <Image source={item.image} style={{ height: 220, width: 220 }} />
-        </View>
+        </View> */}
         <View style={styles.details}>
           <View
             style={{
@@ -36,6 +36,10 @@ const DetailScreen = ({ navigation, route }) => {
               {item.judul}
             </Text>
           </View>
+          <Image
+            source={item.gambar}
+            style={{ resizeMode: "contain", width: "100%" }}
+          />
           <Text style={styles.detailsText}>
             {item.des1}
             {item.des2}
@@ -59,6 +63,13 @@ const DetailScreen = ({ navigation, route }) => {
             source={item.tabel2}
             style={{ resizeMode: "contain", width: "100%" }}
           />
+          <Text style={styles.detailsText}>
+            {item.des6}
+          </Text>
+          <Image
+            source={item.tabel3}
+            style={{ resizeMode: "contain", width: "100%" }}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -69,10 +80,10 @@ export default DetailScreen;
 
 const styles = StyleSheet.create({
   header: {
-    paddingVertical: 20,
+    height:70,
+    paddingTop: 25,
     flexDirection: "row",
     alignItems: "center",
-    marginHorizontal: 20,
   },
   details: {
     paddingHorizontal: 20,
