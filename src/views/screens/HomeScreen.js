@@ -15,6 +15,7 @@ import {
   TouchableHighlight,
 } from "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import YoutubePlayer from "react-native-youtube-iframe";
 import COLORS from "../../const/colors";
 import categories from "../../const/categories";
 import materi from "../../const/materi";
@@ -101,15 +102,20 @@ const HomeScreen = ({ navigation }) => {
           style={{ height: 50, width: 50, borderRadius: 25 }}
         />
       </View>
-      {/* <View>
-        <ListCategories />
-      </View> */}
+      <View style={{ align: 'center', padding:10 }}>
+         <YoutubePlayer 
+         height={200}
+        play={true}
+        videoId={'eQZzRbAXct8'}/>
+        </View>
       <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}
         data={materi}
         renderItem={({ item }) => <Card materi={item} />}
-      />
+      >
+        
+      </FlatList>
     </SafeAreaView>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   StyleSheet,
   Text,
@@ -17,6 +17,14 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { PrimaryButton } from "../components/Button";
 
 const QuizScreen = ({ navigation }) => {
+  const newQuiz = data =>[...data].sort(()=>Math.random()-0.5);
+
+  const randomQuiz = React.useMemo(()=>{
+    return newQuiz(quiz);
+  });
+
+  const [newRandomQuiz, setNewRandomQuiz] = useState([]);
+
   const allQuestions = quiz;
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentOptionSelected, setCurrentOptionSelected] = useState(null);
@@ -26,13 +34,14 @@ const QuizScreen = ({ navigation }) => {
   const [showNextButton, setShowNextButton] = useState(false);
   const [showScoreModal, setShowScoreModal] = useState(false);
 
+  console.log(currentQuestionIndex,'quiz');
   const validateAnswer = (selectedOption) => {
     let correct_option = allQuestions[currentQuestionIndex]["correct_option"];
     setCurrentOptionSelected(selectedOption);
     setCorrectOption(correct_option);
     setIsOptionsDisabled(true);
     if (selectedOption == correct_option) {
-      setScore(score + 1);
+      setScore(score +1);
     }
     setShowNextButton(true);
   };
@@ -40,14 +49,14 @@ const QuizScreen = ({ navigation }) => {
     if (currentQuestionIndex == allQuestions.length - 1) {
       setShowScoreModal(true);
     } else {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setCurrentQuestionIndex(currentQuestionIndex +1);
       setCurrentOptionSelected(null);
       setCorrectOption(null);
       setIsOptionsDisabled(false);
       setShowNextButton(false);
     }
     Animated.timing(progress, {
-      toValue: currentQuestionIndex + 1,
+      toValue: currentQuestionIndex +1,
       duration: 1000,
       useNativeDriver: false,
     }).start();
@@ -55,10 +64,24 @@ const QuizScreen = ({ navigation }) => {
 
   const restartQuiz = () => {
     setShowScoreModal(false);
-
     setCurrentQuestionIndex(0);
     setScore(0);
+    setCurrentOptionSelected(null);
+    setCorrectOption(null);
+    setIsOptionsDisabled(false);
+    setShowNextButton(false);
+    Animated.timing(progress, {
+      toValue: 0,
+      duration: 1000,
+      useNativeDriver: false,
+    }).start();
+  };
 
+  const HalamanAwal = () => {
+    navigation.push("Menu");
+    setShowScoreModal(false);
+    setCurrentQuestionIndex(0);
+    setScore(0);
     setCurrentOptionSelected(null);
     setCorrectOption(null);
     setIsOptionsDisabled(false);
@@ -91,7 +114,7 @@ const QuizScreen = ({ navigation }) => {
               marginRight: 2,
             }}
           >
-            {currentQuestionIndex + 1}
+            {currentQuestionIndex +1}
           </Text>
           <Text style={{ color: COLORS.primary, fontSize: 18, opacity: 0.6 }}>
             / {allQuestions.length}
@@ -294,7 +317,7 @@ const QuizScreen = ({ navigation }) => {
                   </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                  onPress={() => navigation.push("Menu")}
+                  onPress={HalamanAwal}
                   style={{
                     backgroundColor: COLORS.success,
                     padding: 20,

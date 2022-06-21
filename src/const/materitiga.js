@@ -2,14 +2,14 @@ const materitiga = [
   {
     id: "1",
     bab: "Bab 3",
-    judul: "A.	Operasi Aritmatika Bilangan Biner",
+    judul: "Operasi Aritmatika Bilangan Biner",
     des1: "\t\t1.\tPenjumlahan Bilangan Biner\n\nPenjumlahan bilangan biner dapat dilakukan dengan cara yang sama seperti halnya penjumlahan bilangan desimal. Penjumlahan bilangan desimal dapat dilakukan dengan cara sebagai berikut:\n1)\tDigit-digit dan bilangan-bilangan desimal dijumlahkan satu per satu mulai posisi kolom paling kanan.\n2)\t\tBila hasil penjumlahan antar kolom melebihi nilai 9, maka dikurangi dengan nilai 10 untuk disimpan ke penjumlahan kolom berikutnya.\nMisalnya, 18 + 44 = 62, dengan menggunakan Iangkah-langkah di atas bisa diterapkan sebagaiberikut.\n8 + 4 = 12, nilainya melebihi nilai 9, jadi simpan 1 dan tulis hasilnya 2.\n1+4+1=6\nJadi, hasilnya: 62.\nBilangan biner dijumlahkan dengan cara yang sama dengan penjumlahan bilangan desimal. Dasar penjumlahan untuk masing-masing digit bilangan biner adalah:\n0+0=0\n0+1=1\n1+0=1\n1 + 1 = 0 1 + 1 = 2, karena digit terbesar biner 1, maka harus dikurangi dengan 2\n(basis), jadi 2 - 2 = 0 dengan simpanan 1.\n\n\n\nContoh soal \n1111 = 15\n10100 = 20\n------- + \n100011 = 35\n\natau dengan langkah:\n1 + 0  =1\n1 + 0  =1\n1 + 1 = 0 dengan simpanan 1\n1+1+1 =0\n1+1\t= 0 dengan simpanan 1\nJadi, hasilnya: 1 0 0 0 1 1\n",
     des2: "\n\n\t\t",
   },
   {
     id: "2",
     bab: "Bab 3",
-    judul: "A.	Operasi Aritmatika Bilangan Biner",
+    judul: "Operasi Aritmatika Bilangan Biner",
     des1: "\t\t2.\tPengurangan Bilangan Biner\n\nBilangan biner dikurangkan dengan cara yang sama pada operasi pengurangan bilangan desimal. Dasar pengurangan untuk masing-masing digit bilangan biner adalah:\n0 – 0=0\n1 – 0= 1.\n1 – 1=0\n0- 1 = 1 -> dengan pinjaman 1, (pinjam 1 dan posisi sebelah kirinya).\n\nContoh\n",
     des2: "\n\t\tTabel 3.1. Pengurangan Bilangan Biner",
     des3: "\t\tLangkah-langkah penyelesaiannya :\n1 – 1\t= 0\n1 – 0\t= 1\tJadi hasilnya : 10010\n0 – 0\t= 0\n1 – 1\t= 0\n1 – 0\t= 1\n",
@@ -19,7 +19,7 @@ const materitiga = [
   {
     id: "3",
     bab: "Bab 3",
-    judul: "A.	Operasi Aritmatika Bilangan Biner",
+    judul: "Operasi Aritmatika Bilangan Biner",
     des1: "\t\t3.\tPerkalian Bilangan Biner.\n\nDilakukan sama dengan cara perkalian pada bilangan desimal. Dasar perkalian bilangan biner adalah:\n\n0 x 0\t= 0\n1 x 0\t= 0\n0 x 1\t= 0\n1 x 1\t= 1\n",
     des2: "\n\t\tTabel 3.2. Tabel Perkalian Biner",
     tabel: require("../../src/assets/materi/bab3/3.2.jpg"),
@@ -27,7 +27,7 @@ const materitiga = [
   {
     id: "4",
     bab: "bab 3",
-    judul: "A.	Operasi Aritmatika Bilangan Biner",
+    judul: "Operasi Aritmatika Bilangan Biner",
     des1: "\n\t\t4.\tPembagian Bilangan Biner\n\nPembagian bilangan biner juga dilakukan dengan cara yang sama pada bilangan desimal. Pembagian biner 0 tidak mempunyai arti sehingga dasar pembagian biner adalah\n0 : 1\t= 0\n1 : 1\t= 1\n",
     des2: "\n\t\tTabel 3.3 Pembagian Bilangan Biner",
     tabel: require("../../src/assets/materi/bab3/3.3.jpg"),
@@ -35,7 +35,7 @@ const materitiga = [
   {
     id: "5",
     bab: "bab 3",
-    judul: "B.	Operasi Aritmatika Bilangan Oktal",
+    judul: "Operasi Aritmatika Bilangan Oktal",
     des1: "\n\t\t1.\tPenjumlahan Aritmetiha Bilangan Oktal\nPenjumlahan bilangan oktal dapat dilakukan secara sama dengan penjumlahan bilangan desimal.\nLangkah-langkah penjumlahan adalah sebagai berikut.\n1)\tTambahkan masing-masing kolom secara desimal.\n2)\tUbah dan hasil desimal ke oktal.\n3)\tTuliskan hasil dari digit paling kanan dari hasil oktal.\n4)\tJika hasil penjumlahan tiap-tiap kolom terdiri daridua digit, maka digit paling kiri merupakansimpan untuk penjumlahan kolom selanjutnya.\n\nContoh :\n",
     des2: "\n\t\tTabel 3.4. Penjumlahan Bilangan Oktal",
     tabel: require("../../src/assets/materi/bab3/3.4.jpg"),
@@ -43,7 +43,7 @@ const materitiga = [
   {
     id: "6",
     bab: "bab 3",
-    judul: "B.	Operasi Aritmatika Bilangan Oktal",
+    judul: "Operasi Aritmatika Bilangan Oktal",
     des1: "\n\t\t2.\tPengurangan Arítmetika Bilangan Oktal\nPengurangan bilangan oktal dapat dilakukan secara sama dengan pengurangan bilangan desimal.\n",
     des2: "\n\t\tTabel 3.6. Pengurangan Bilangan Oktal",
     tabel: require("../../src/assets/materi/bab3/3.5.jpg"),
@@ -51,7 +51,7 @@ const materitiga = [
   {
     id: "7",
     bab: "bab 3",
-    judul: "B.	Operasi Aritmatika Bilangan Oktal",
+    judul: "Operasi Aritmatika Bilangan Oktal",
     des1: "\n\t\t3\tPerkalian Aritmetika Bilangan Oktal\nPerkalian bilangan oktal dilakukan dengan cara yang sama pada perkalian bilangan desimal.\nLangkah-langkahnya adalah sebagai berikut.\n1)\tKalikan masing-masing kolom secara desimal.\n2)\tUbah dari hasil desimal ke oktal.\n3)\tTuliskan hasil daridigit paling kanan dan hasil oktal.\n4)\tJika hasil perkalian tiap kolom terdiri dari 2 digit, maka digit paling kiri merupakan simpanan untuk dijumlahkan pada hasil perkalian kolom selanjutnya.\n",
     des2: "\n\t\tTabel 3.7. Pengalian Bilangan Oktal",
     tabel: require("../../src/assets/materi/bab3/3.6.jpg"),
@@ -60,7 +60,7 @@ const materitiga = [
   {
     id: "8",
     bab: "bab 3",
-    judul: "B.	Operasi Aritmatika Bilangan Oktal",
+    judul: "Operasi Aritmatika Bilangan Oktal",
     des1: "\n\t\t4.\tPembagian Aritmetika bilangan Oktal",
     des2: "\n\t\tTabel 3.8.Pembagian bilangan Oktal",
     tabel: require("../../src/assets/materi/bab3/3.8.jpg"),
@@ -68,7 +68,7 @@ const materitiga = [
   {
     id: "9",
     bab: "bab 3",
-    judul: "C.	Operasi Aritmatika Bilangan Heksadesimal",
+    judul: "Operasi Aritmatika Bilangan Heksadesimal",
     des1: "\n\t\t1.\tPenjumlahan Operasi Aritmetika Bilangan Heksadesimal\n\nPenjumlahan bilangan heksadesimal dapat dilakukan secara sama dengan penjumlahan bilangan oktal.Langkah-Iangkah penjumlahan bilangan heksadesimal adalah sebagai berikut.\n1)\tTambahkan masing-masing kolom secara desimal.\n2)\tUbah dari hasil desimal ke heksadesimal.\n3)\tTuliskan hasil dari digit paling kanan dari hasil heksadesimal.\n4)\tJika hasil penjumlahan tiap-tiap kolom terdiri daridua digit, maka digit paling kiri merupakansimpanan untuk penjumlahan kolom selanjutnya.\n",
     des2: "\n\t\tTabel 3.9. Penjumlahan Bilangan Heksadesimal",
     tabel: require("../../src/assets/materi/bab3/3.9.jpg"),
@@ -76,7 +76,7 @@ const materitiga = [
   {
     id: "10",
     bab: "bab 3",
-    judul: "C.	Operasi Aritmatika Bilangan Heksadesimal",
+    judul: "Operasi Aritmatika Bilangan Heksadesimal",
     des1: "\n\t\t2.\tPengurangan Operasi Aritmetika Bilangan Heksadesimal\n\nPengurangan bilangan heksadesimal dapat dilakukan secara sama dengan pengurangan bilangan desimal.\n",
     des2: "\n\t\tTabel 3.10.Pengurangan Bilangan Heksadesimal",
     tabel: require("../../src/assets/materi/bab3/3.10.jpg"),
@@ -84,7 +84,7 @@ const materitiga = [
   {
     id: "11",
     bab: "bab 3",
-    judul: "C.	Operasi Aritmatika Bilangan Heksadesimal",
+    judul: "Operasi Aritmatika Bilangan Heksadesimal",
     des1: "\n\t\t3.\tPerkalian Operasi Aritmetika Bilangan Heksadesimal\nPerkalian bilangan heksadesimal dapat dilakukan secara sama dengan perkalian bilangan desimal, dengan langkah-Langkah sebagai berikut.\n1)\tKalikan masing-masing kolom secara desimal.\n2)\tUbah dari hasil desimal ke oktal.\n3)\tTuliskan hasil dari digit paling kanan dari hasil oktal.\n4)\tJika hasil perkalian tiap kolom terdiri dari 2 digit, maka digit paling kiri merupakan simpanan untuk dijumlahkan pada hasil perkalian kolom selanjutnya.\n",
     des2: "\n\t\tTabel 3.11.Perkalian Bilangan Heksadesimal",
     tabel: require("../../src/assets/materi/bab3/3.11.jpg"),
@@ -92,7 +92,7 @@ const materitiga = [
   {
     id: "12",
     bab: "bab 3",
-    judul: "C.	Operasi Aritmatika Bilangan Heksadesimal",
+    judul: "Operasi Aritmatika Bilangan Heksadesimal",
     des1: "\n\t\t4.\tPembagian Operasi Aritmetika Bilangan Heksadesimal\nPembagian bilangan heksadesimal dapat dilakukan secara sama dengan pembagian bilangandesimal.\n",
     des2: "\n\t\tTabel 3.12.Pembagian Bilangan Heksadesimal",
     tabel: require("../../src/assets/materi/bab3/3.12.jpg"),

@@ -9,6 +9,7 @@ import {
 import COLORS from "../../const/colors";
 import bab from "../../const/bab";
 import MarqueeText from 'react-native-marquee';
+import YoutubePlayer from "react-native-youtube-iframe";
 
 const { width } = Dimensions.get("screen");
 const cardWidth = width / 2 - 20;
@@ -89,6 +90,12 @@ export default function MenuScreen({ navigation }) {
         Selamat Datang di SMK n 1 pleret 
         </MarqueeText>
       </View>
+      {/* <View style={{ align: 'center' }}>
+         <YoutubePlayer 
+         height={200}
+        play={true}
+        videoId={'eQZzRbAXct8'}/>
+        </View> */}
       <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}

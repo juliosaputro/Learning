@@ -9,6 +9,7 @@ const materi = [
     des4:"\t\t1.\tHardware (perangkat keras) adalah peralatan di sistem komputer yang secara fisik terlihat dan dapat dijamah, seperti monitor, keyboard, dan mouse.\n\t\t2.\tSoftware (perangkat lunak) adalah program yang berisi perintah-perintah untuk melakukan pengolahan data. Ada tiga bagian utama dan software :\n\t\t\ta.\tSistem operasi : DOS, Linux, Windows, dan Mac.\n\t\t\tb.\tBahasa pemrograman : Visual Basic, C++, Pascal, Java, dan Visual C.\n\t\t\tc.\tAplikasi : MS Office, Antivirus, Winamp, dan Mozilla.\n\t\t3.\tBrainware adalah manusia yang terlibat dalam mengoperasikan serta mengatur sistem komputer.\n",
     des5:"\t\tKetiga elemen sistem komputer tersebut harus saling berhubungan dan membentuk satu-kesatuan. Hardware tanpa adanya software maka tidak akan berfungsi seperti yang diharapkan, hanya berupa benda mati saja. Software yang akan mengoperasikan hardwarenya. Hardware yang sudah didukung oleh software juga tidak akan berfungsi jika tidak ada manusia yang mengoperasikamya.",
     image: require("../../src/assets/book.png"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "2",
@@ -19,6 +20,7 @@ const materi = [
     des3:"\t\tSering kali orang membandingkan komputer dengan manusia. Tentunya ada beberapa kelebihan dan kekurangan dari keduanya. Jadi, sebenarnya penggunaan komputer tidak seluruhnya menggantikan fungsi kerja dan manusia, tetapi hanya sebagai alat bantu saja. Komputer merupakan perkembangan teknologi yang penting karena meningkatkan kemampuan daya manusia.",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/memorikom.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "3",
@@ -30,6 +32,7 @@ const materi = [
     des4:"\n\t\t\ta.\tBlok Input.\n\t\t\t\t\tBagian blok ini merupakan pintu masuk dari sistem komputer yang berfungsi untuk menerima seluruh aktifitas masukan dari pengguna secara langsung maupun tidak langsung (dapat berupa peralatan atau mesin yang lain diluar sistem).\n\n\t\t\tb.\tBlok Proses.\n\t\t\t\t\tBagian blok ini merupakan pusat aktifitas proses pengolahan dari berbagai data masukan yang diberikan oleh pengguna sesuai dengan ketentuan yang telah ditetapkan sebelumnya sehingga mampu memberikan hasil yang sesuai dengan keinginan pengguna. Selanjutnya hasil proses akan disalurkan ke pengguna secara langsung atau tidak langsung melalui blok output. Proses yang dilakukan oleh bagian ini sebagian besar merupakan hasil perhitungan maupun logika secara digital dalam bentuk besaran- besaran listrik dalam rangkaian elektronik yang sangat kompleks. Besaran-besaran listrik digital ini selanjutnya digambarkan sebagai kode bilangan biner maupun heksa desimal. Kode-kode inilah yang selanjutnya menjadi kode perintah bagi mesin pemroses ini untuk menjalankan seluruh perintah yang diberikan kepadanya. Kode perintah ini juga dikenal sebagai bahasa mesin (machine language). Jadi pada bagian blok proses hanya dapat menjalankan   pengolahan   data  sesuai  dengan\tperintah-perintah yang diberikan kepadanya.\n\n\t\t\tc.\tBlok Output.\n\t\t\t\t\tPada bagian ini merupakan perantara yang menjembatani antara blok proses dengan pengguna untuk melihat atau mengambil hasil proses.\n",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/siklus.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "4",
@@ -40,6 +43,7 @@ const materi = [
     des3:"\n\t\tOleh karena itu, nilai 8598 dapat juga diartikan dengan (8 X 1000) + (5 X 100) + (9 x 10) + (8 x 1). Pecahan desimal adalah nilai desimal yang mengandung nilai pecahan di belakang koma, misalnya nilal 183,75 adalah pecahan desimal yang dapat diartikan:\n1 x 102 = 100\n8 x 101 = 80\n3 x 100 = 3\n7 x 10-1 = 0,7\n5 x 10-2 = 0,05\n              +\n183,75\n\n\t\tBaik integer desimal maupun pecahan desimal dapat ditulis dengan bentuk eksponensial. Misalnya nilai 82,15 dapat dituliskan 0,8215 X 102. Setiap nilai desimal yang bukan nol dapat dituliskan dalam bentuk eksponensial standar (standard exponential form), yaitu ditulis dengan mantissa dan eksponen. Mantissa merupakan nilai pecahan yang digit pertama di belakang koma bukan beniilai nol.\n",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/bildes.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "5",
@@ -50,6 +54,7 @@ const materi = [
     des3:"\n\t\tContoh Soal\n1.\tberapakah nilai bilangan desimal dan bilangan bilangan biner berikut ini. a. 10012\t=\t10\nb. 1011012\t=\t10\nc. 111001102  =\t10\n\nPenyelesaian:\na. 1001=\n8\t4\t2\t1\n1\t0\t0\t1\n\nMaka : 8 + 1 = 910\natau\n10012\t= 20 + 21\n= 1 + 8\n= 9 10\nb. 1011012\t= a5 x 25 + a4 x 24 + a3 x 23 + a2 x 22 + a1 + a0\n= 1 x 32+0 x 16 +1 x 8 + 1 x 4 + 0 x 2 + 1\n= 32 + 0 + 8 + 4 + 0 + 1\n= 45 10\n\nc. 111001102=\n\n128\t64\t32\t16\t8\t4\t2\t1\n1\t1\t1\t0\t0\t1\t1\t0\n111001102\t= 128 + 64 + 32 + 4 + 2\n= 23410\n",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/bilbiner.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "6",
@@ -60,6 +65,7 @@ const materi = [
     des3:"\n\t\tMisalnya bilangan oktal 1213 di dalam sistem bilangan desimal bernilai 1 x 83 + 2 x 82 + 1 x 81 + 3 x 80 = 1 x 512 + 2 x 64 + 1 x 8 + 3 x 1 = 512 + 128 + 8 + 3 = 651 atau ditulis\ndengan notasi: 12138 = 65110\n",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/biloctal.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "7",
@@ -70,6 +76,7 @@ const materi = [
     des3:"\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/bilheksa.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "8",
@@ -80,6 +87,7 @@ const materi = [
     des3:"\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/sistembil.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "9",
@@ -93,6 +101,7 @@ const materi = [
     tabel:require("../../src/assets/materi/destobiner.jpg"),
     tabel1:require("../../src/assets/materi/destobiner1.jpg"),
     tabel2:require("../../src/assets/materi/destobiner2.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "10",
@@ -103,6 +112,7 @@ const materi = [
     des3:"\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/destooctal.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "11",
@@ -114,6 +124,7 @@ const materi = [
     des4:"\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/destoheksa.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "12",
@@ -125,6 +136,7 @@ const materi = [
     des4:"",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/binertodes.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "13",
@@ -134,6 +146,7 @@ const materi = [
     des2:"\n\t\tTabel 1.7 Konversi Bilangan Oktal",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/bintooctal.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "14",
@@ -143,6 +156,7 @@ const materi = [
     des2:"\n\t\tTabel 1.8 Konversi bit bilangan Heksadesimal",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/bintoheksa.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "15",
@@ -152,6 +166,7 @@ const materi = [
     des2:"\n\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/octaltodes.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "16",
@@ -162,6 +177,7 @@ const materi = [
     des3:"\n\n\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/octaltobiner.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "17",
@@ -170,6 +186,7 @@ const materi = [
     des1:"\n\t\tKonversi dan bilangan oktal ke bilangan heksadesimal dapat dilakukan dengan cara mengubah dari bilangan oktal menjadi bilangan biner terlebih dahulu, kemudian dikonversikan kebilanganheksadesimal. Misalnya, bilangan oktal 2537, akan dikonversikan ke heksadesimal, dengan langkah-langkahberikut ini.",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/octaltoheksa.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "18",
@@ -181,6 +198,7 @@ const materi = [
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/heksatodes.jpg"),
     tabel1:require("../../src/assets/materi/heksatodes1.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "19",
@@ -190,6 +208,7 @@ const materi = [
     des2:"\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/heksatobiner.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "20",
@@ -199,6 +218,7 @@ const materi = [
     des2:"\n\t\t",
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/heksatooctal.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "21",
@@ -212,6 +232,7 @@ const materi = [
     tabel:require("../../src/assets/materi/bcd.jpg"),
     tabel1:require("../../src/assets/materi/bcd1.jpg"),
     tabel2:require("../../src/assets/materi/bcd2.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "22",
@@ -223,6 +244,7 @@ const materi = [
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/bch.jpg"),
     tabel1:require("../../src/assets/materi/bch1.jpg"),
+    video:"eQZzRbAXct8",
   },
   {
     id: "23",
@@ -234,6 +256,7 @@ const materi = [
     image: require("../../src/assets/book.png"),
     tabel:require("../../src/assets/materi/ascii.jpg"),
     tabel1:require("../../src/assets/materi/ascii2.jpg"),
+    video:"eQZzRbAXct8",
   },
 ];
 

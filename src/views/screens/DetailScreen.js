@@ -1,27 +1,28 @@
-import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
+import React, { useState, useCallback,useRef } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Image,
+  Button,
+  Alert
+} from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import COLORS from "../../const/colors";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 const DetailScreen = ({ navigation, route }) => {
   const item = route.params;
+
+
   return (
     <SafeAreaView style={{ backgroundColor: COLORS.white }}>
       <View style={styles.header}>
         <Icon name="arrow-back-ios" size={28} onPress={navigation.goBack} />
         <Text style={{ fontSize: 20, fontWeight: "bold" }}>{item.bab}</Text>
       </View>
-      <ScrollView  showsHorizontalScrollIndicator={false}>
-        {/* <View
-          style={{
-            justifyContent: "center",
-            alignItems: "center",
-            height: 200,
-          }}
-        >
-          <Image source={item.image} style={{ height: 220, width: 220 }} />
-        </View> */}
+      <ScrollView showsHorizontalScrollIndicator={false}>
         <View style={styles.details}>
           <View
             style={{
@@ -48,9 +49,7 @@ const DetailScreen = ({ navigation, route }) => {
             source={item.tabel}
             style={{ resizeMode: "contain", width: "100%" }}
           />
-          <Text style={styles.detailsText}>
-            {item.des3}
-          </Text>
+          <Text style={styles.detailsText}>{item.des3}</Text>
           <Image
             source={item.tabel1}
             style={{ resizeMode: "contain", width: "100%" }}
@@ -63,9 +62,7 @@ const DetailScreen = ({ navigation, route }) => {
             source={item.tabel2}
             style={{ resizeMode: "contain", width: "100%" }}
           />
-          <Text style={styles.detailsText}>
-            {item.des6}
-          </Text>
+          <Text style={styles.detailsText}>{item.des6}</Text>
           <Image
             source={item.tabel3}
             style={{ resizeMode: "contain", width: "100%" }}
@@ -80,7 +77,7 @@ export default DetailScreen;
 
 const styles = StyleSheet.create({
   header: {
-    height:70,
+    height: 70,
     paddingTop: 25,
     flexDirection: "row",
     alignItems: "center",
@@ -89,7 +86,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 40,
     paddingBottom: 60,
-    marginBottom:50,
+    marginBottom: 50,
     backgroundColor: COLORS.primary,
     borderTopRightRadius: 40,
     borderTopLeftRadius: 40,
@@ -109,4 +106,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: COLORS.white,
   },
+  youtube:{
+    align:'center',
+    if (videos = "") {
+      this.display='flex';
+    },else:{
+    display:'none'
+    }
+  }
 });

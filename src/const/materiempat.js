@@ -8,7 +8,7 @@ const materiempat = [
   {
     id: "2",
     bab: "Bab 4",
-    judul: "A.	Rangkaian Half Adder",
+    judul: "Rangkaian Half Adder",
     des1: "\t\tHalf adder adalah suatu rangkaian penjumlahan sistem bilangan biner yang  paling sederhana. Rangkaian ini hanya dapat digunakan untuk operasi penjumlahan data bilangan biner sampai 1 bit saja. Rangkaian Half Adder memiliki 2 terminal input untuk 2 variabel bilangan biner dan 2 terminal output, yaitu summary out (SUM) dan carry out (CARRY).\nHalf Adder (HA) adalah rangkaian penjumlahan sistem bilangan biner yang paling sederhana. Rangkaian ini hanya dapat digunakan untuk melakukan operasi penjumlahan dua bilangan biner 1 bit. Rangkaian half adder memiliki dua terminal input untuk 2 variabel bilangan biner dan 2 terminal output, yaitu summary out (sum) dan carry out (carry). Aturan-aturan untuk melakukan penambahan biner dua bit diilustrasikan sebagai berikut:\nAturan 1\t0 + 0 = 0\nAturan 2\t0 + 1 = 1\nAturan 3\t1 + 0 = 1\nAturan 4\t1 + 1 = 0 dan carry 1 = 10\n\nTiga aturan pertama mudah dimngerti, sedangkan aturan 4 menyatakan bahwa penjumlahan biner 1 + 1 = 10 (desimal 2). Angka 1 hasil penjumlahan dibawa ke kolom yang mempunyai tingkatan lebih tinggi, dan dikatakan terdapat carry.\nRancangan diagram logika menggunakan XOR dan AND, masukan diberikan simbol A dan B sedangkan keluaran diberi simbol ∑ yang berarti jumlah (SUM) dan Simbol Co berarti bawaan keluar (Carry Out). Diagram logika dan penambahan setengah (half adder) dengan input A dan B, simbol half adder dan tabel kebenaran diberikan pada gambar berikut.\n",
     des2:"\n\t\tTabel 2.3 Operator Logika",
     des3:"\t\t",
@@ -18,7 +18,7 @@ const materiempat = [
   {
     id: "3",
     bab: "Bab 4",
-    judul: "B.	Rangkaian Full Adder",
+    judul: "Rangkaian Full Adder",
     des1: "\t\tFull Adder adalah rangkaian elekronik yang bekerja melakukan perhitungan penjumlahan penuhdari dua buah bilangan biner yang masing-masing terdiri dari satu bit. Rangkaian ini memiliki 3input dan 2 output, salah satu input merupakan nilai dari pindahan penjumlahan, kemudian sama seperti pada hafl adder salah satu outputnya dipakai sebagai tempat nilai pindahan dan yang lain sebagai hasil dari penjumlahan.\nRangkaian full adder (FA) dapat digunakan untuk menjumlahkan bilangan biner yang lebih dari 1 bit. Rangkaian Full Adder dapat dibentuk oleh gabungan 2 buah rangkaian half adder dan sebuah gerbang OR untuk menjumlahkan carry output. Pada penambahan penuh muncul aturan kelima yang menyatakan suatu penjumlahan setengah tidak akan bekerja bila muncul carry-in. Oleh karena itu penambahan penuh mempunyai tiga masukan yaitu A, B dan C-in, sedangkan keluaran adalah SUM dan Co (carry out). Diagram logika dari full adder dan tabel kebenaran disajikan pada gambar berikut, untuk simulasi bisa digunakan software electronic workbench.\n",
     tabel:require('../../src/assets/materi/bab4/4.2.jpg'),
     tabel1:require('../../src/assets/materi/bab4/4.3.jpg'),

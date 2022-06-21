@@ -36,7 +36,7 @@ const materidua = [
   {
     id: "4",
     bab: "bab 2",
-    judul: "B.	Fungsi OR Gate ( Gerbang OR )",
+    judul: "Fungsi OR Gate ( Gerbang OR )",
     des1:"\n\t\tDari sistem saklar di atas terlihat bahwa lampu akan menyala jika salah satu dari saklar menutup. Dalam hal ini bisa dijelaskan secara electronic bahwa aruslistrik dapat mengalir melalui saklar yang tertutup tersebut.\nAljabar Boolean untuk gerbang OR dapat dituliskan sebagai berikut:\n\nA + 0 = 1\nA + 1 = 1 A + A = A A + Ā‘ = 1\nSimbol gerbang OR dan tabel kebenarannya adalah sebagai berikut:\n",
     des2:"\n\t\t",
     des3:"\n\t\tDari uraian di atas dapat diambil kesimpulan bahwa output gerbang OR akan berharga 1, jika salah satu atau lebih inputnya bernilai 1. Kesimpulan ini berlaku juga untuk gerbang OR dengan input lebih dari 3.\n",
@@ -46,7 +46,7 @@ const materidua = [
   {
     id: "5",
     bab: "bab 2",
-    judul: "C.	Fungsi NOT Gate ( Gerbang NOT ) atau inverter",
+    judul: "Fungsi NOT Gate ( Gerbang NOT ) atau inverter",
     des1:"\n\t\tGerbang NOT atau inverter merupakan gerbang yang berfungsi untuk membalikkan kondisi input. Jika input dalam kondisi 1 maka output akan mempunyai kondisi 0.\nSebaliknya jika input dalam keadaan 0 maka output akan berada dalam kondisi 1. Simbol gerbang NOT adalah:\n",
     des2:"\n\t\t",
     des3:"\n\t\tDengan sifat yang demikian, maka dapat disimpulkan bahwa output dari gerbang NOT selalu berlawanan dengan inputnya. Jadi dapat disimpulkan bahwa NOT di NOT-kan lagi akan kembali ke kondisi semula (kondisi sama dengan input). Secara aljabar Boolean dapat ditulis: Y = A‘ = A\n",
@@ -56,8 +56,8 @@ const materidua = [
   {
     id: "6",
     bab: "bab 2",
-    judul: "Fungsi Gerbang Kombinasi\n A.	Fungsi Gerbang Kombinasi ( NAND, EX-OR)",
-    des1:"\n\t\tGerbang NAND merupakan kombinasi dan gerbang AND dengan gerbang NOT di mana keluaran gerbang AND dihubungkan ke saluran masukan dan gerbang NOT. Prinsip kerja dari gerbang NAND merupakan kebalikan dari gerbang AND. Outputnya merupakan kebalikan dari gerbang AND, yakni memberikan keadaan level logik 0 pada outputnya jika dan hanya jika keadaan semua inputnya berlogika 1. Gerbang NAND merupakan gabungan dari NOR dan AND digambarkan sebagai berikut.",
+    judul: "Fungsi Gerbang Kombinasi",
+    des1:"\n\t\tA.	Fungsi Gerbang Kombinasi ( NAND, EX-OR)\n Gerbang NAND merupakan kombinasi dan gerbang AND dengan gerbang NOT di mana keluaran gerbang AND dihubungkan ke saluran masukan dan gerbang NOT. Prinsip kerja dari gerbang NAND merupakan kebalikan dari gerbang AND. Outputnya merupakan kebalikan dari gerbang AND, yakni memberikan keadaan level logik 0 pada outputnya jika dan hanya jika keadaan semua inputnya berlogika 1. Gerbang NAND merupakan gabungan dari NOR dan AND digambarkan sebagai berikut.",
     des2:"\n\t\t",
     des3:"\n\t\tKarakteristiknya: Jika A dan B input sedangkan Y adalah output, maka output gerbang NAND akan berlogika 1 jika salah satu inputnya berlogika 0. Output akan berlogika 0 jika kedua inputnya berlogika 1. Output gerbang NAND adalah kebalikan output gerbang AND.",
     des6:"Gerbang NAND bisa mempunyai Iebih dari dua input. Tabel kebenaran untuk 3 input gerbang NAND memperlihatkan output akan selalu 1 jika kedua input A, B, dan C tidak 1. Gambar dibawah ini memperlihatkan contoh IC gerbang NAND 7400 dengan input.",
@@ -68,7 +68,7 @@ const materidua = [
   {
     id: "7",
     bab: "bab 2",
-    judul: "B.	Fungsi Gerbang NOR ( NOT OR )",
+    judul: "Fungsi Gerbang NOR ( NOT OR )",
     des1:"\n\t\tOperasi gerbang NOR sama seperti dengan gerbang OR, tetapi bedanya keluarannya diinverterkan (dibalikkan). Disini Anda dapat membedakan gerbang NOR dan gerbang OR dengan membedakan outputnya. Simbol untuk gerbang NOR ini seperti dengan OR-Inverter, simbol diperlihatkan pada Gambar dibawah ini :\n",
     des2:"\n\t\t",
     des3:"\n\t\tSimbol gerbang NOR ini serupa dengan OR-Inverter dengan A = O, B = O akan menghasilkan output 1. Persamaan boolean untuk fungsi NOR adalah Y = A + B dengan kata lain Y akan bernilai 0 bila A atau B = 1.",
@@ -77,7 +77,7 @@ const materidua = [
   {
     id: "8",
     bab: "bab 2",
-    judul: "C.	Fungsi EX – OR Gate ( Gerbang EX-OR )",
+    judul: "Fungsi EX – OR Gate ( Gerbang EX-OR )",
     des1:"\n\t\tEX-OR singkatan dan Exclusive OR di mana jika input berlogika sama maka output akan berlogika 0 dan sebaliknya jika input berlogika beda maka output akan berlogika Rangkaian EX-OR disusun dengan menggunakan gerbang AND, OR, dan NOT.",
     des2:"\n\t\t",
     des3:"\n\t\t",
@@ -86,7 +86,7 @@ const materidua = [
   {
     id: "9",
     bab: "bab 2",
-    judul: "D.	Fungsi EX-NOR",
+    judul: "Fungsi EX-NOR",
     des1:"\n\t\tGerbang EX-NOR akan memberikan output berlogika 0 jika inputnya berlogika beda, dan akan berlogika 1 jika kedua Inputnya berlogika sama. Rangkaian EX-NOR disusun dengan menggunakan gerbang AND, OR, NOT.",
     des2:"\n\t\t",
     des3:"\n\t\tTabel kebenaran EX-NOR memberikan keluaran 1 apabila kedua inputnya sama dan akan memberikan keluaran 0 apabila kedua inputnya berbeda.\n",
