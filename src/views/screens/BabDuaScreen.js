@@ -50,9 +50,9 @@ const BabDuaScreen = ({ navigation }) => {
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <View style={styles.header}>
         <View>
-          <Text style={{ marginTop: 5, fontSize: 22, color: COLORS.grey }}>
+          {/* <Text style={{ marginTop: 5, fontSize: 22, color: COLORS.grey }}>
             Kerja Praktik
-          </Text>
+          </Text>  */}
         </View>
         <Image
           source={require("../../assets/smk.png")}
