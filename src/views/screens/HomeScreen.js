@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   StyleSheet,
   Text,
+  Linking,
   View,
   Dimensions,
   Image,
@@ -14,7 +15,6 @@ import {
   TouchableOpacity,
   TouchableHighlight,
 } from "react-native-gesture-handler";
-import Icon from "react-native-vector-icons/MaterialIcons";
 import YoutubePlayer from "react-native-youtube-iframe";
 import COLORS from "../../const/colors";
 import categories from "../../const/categories";
@@ -77,7 +77,6 @@ const HomeScreen = ({ navigation }) => {
             <View style={{ height: 60, width:60, alignItems:'center', justifyContent:'center',}}>
             <Text style={{ fontSize: 48, fontWeight: "bold", color:COLORS.primary}}>{materi.id}</Text>
             </View>
-            {/* <Image source={materi.image} style={{ height: 120, width: 120 }} /> */}
           </View>
           <View style={{ height:90, marginHorizontal: 20, alignItems:'center', justifyContent:'center' }}>
             <Text style={{ fontSize: 14, color: COLORS.grey, marginTop: 2, fontWeight:'bold',textAlign:'center' }}>
@@ -93,9 +92,6 @@ const HomeScreen = ({ navigation }) => {
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <View style={styles.header}>
         <View>
-          {/* <Text style={{ marginTop: 5, fontSize: 22, color: COLORS.grey }}>
-            Kerja Praktik
-          </Text> */}
         </View>
         <Image
           source={require("../../assets/smk.png")}
@@ -107,6 +103,7 @@ const HomeScreen = ({ navigation }) => {
          height={200}
         play={true}
         videoId={'eQZzRbAXct8'}/>
+        <Text style={{ color:'blue', textAlign:'right' }} onPress={()=>Linking.openURL('https://youtu.be/eQZzRbAXct8')}>Source:https://youtu.be/eQZzRbAXct8</Text>
         </View>
       <FlatList
         showsVerticalScrollIndicator={false}

@@ -49,19 +49,11 @@ const BabDuaScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <View style={styles.header}>
-        <View>
-          {/* <Text style={{ marginTop: 5, fontSize: 22, color: COLORS.grey }}>
-            Kerja Praktik
-          </Text>  */}
-        </View>
         <Image
           source={require("../../assets/smk.png")}
           style={{ height: 50, width: 50, borderRadius: 25 }}
         />
       </View>
-      {/* <View>
-        <ListCategories />
-      </View> */}
       <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}

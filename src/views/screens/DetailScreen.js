@@ -37,6 +37,7 @@ const DetailScreen = ({ navigation, route }) => {
               {item.judul}
             </Text>
           </View>
+          <Text style={styles.detailsText}>{item.caption1}</Text>
           <Image
             source={item.gambar}
             style={{ resizeMode: "contain", width: "100%" }}
@@ -45,6 +46,11 @@ const DetailScreen = ({ navigation, route }) => {
             {item.des1}
             {item.des2}
           </Text>
+          <Image
+            source={item.gambar1}
+            style={{ resizeMode: "contain", width: "100%" }}
+          />
+          <Text style={styles.detailsText}>{item.caption2}</Text>
           <Image
             source={item.tabel}
             style={{ resizeMode: "contain", width: "100%" }}

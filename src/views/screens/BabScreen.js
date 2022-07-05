@@ -90,12 +90,6 @@ export default function MenuScreen({ navigation }) {
         Selamat Datang di SMK n 1 pleret 
         </MarqueeText>
       </View>
-      {/* <View style={{ align: 'center' }}>
-         <YoutubePlayer 
-         height={200}
-        play={true}
-        videoId={'eQZzRbAXct8'}/>
-        </View> */}
       <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}
